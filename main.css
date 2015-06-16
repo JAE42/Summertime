@@ -1,0 +1,169 @@
+/******************
+    GENERAL
+******************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; 
+  text-decoration: none;
+/*  outline: 1px solid red !important;*/
+}
+
+body {
+  font-family: 'Open Sans', sans-serif, 'Abolition Regular';
+}
+
+h1 {
+  background: orange;  
+  text-shadow: 0px 3px 0px #b2a98f,
+             0px 14px 10px rgba(0,0,0,0.15),
+             0px 24px 2px rgba(0,0,0,0.1),
+             0px 34px 30px rgba(0,0,0,0.1);
+  font-size: 100px;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: inherit;
+}
+
+a {
+  background: goldenrod;
+  color: gold; 
+  padding-right: 29%;
+  display: flex;
+}
+
+h2 {
+  background: chocolate;
+  color: firebrick; 
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+
+/******************
+    IMAGES
+******************/
+.wrapper {
+  background-color: burlywood;
+  margin: 0 auto;
+  position: relative;
+  padding: inherit;
+}
+
+img {
+  padding: 60px 30px 70px;
+  width: 55%;
+  margin: auto;
+  max-width: 45%;
+  background-color: cadetblue;
+}
+
+.photo1 {
+  margin-top: 18px; 
+}
+
+.play {
+  float: right; 
+}
+
+.caption1, .caption3 {
+  background-color: red;
+  padding: 20px;
+  float: right;
+  font-size: 20px;
+  max-width: 40%;
+  margin: 20px;
+}
+
+.caption2 {
+  background-color: red;
+  padding: 20px;
+  float: left;
+  font-size: 20px;
+  max-width: 40%;
+  margin: 20px;
+}
+
+.intro {
+  background-color: transparent; 
+  display: inline-block;
+  color: #000;
+}
+
+
+
+/******************
+    FOOTER
+******************/
+
+.footer {
+  border-top: 5px;
+  border-bottom: 5px;
+  border-style: solid;
+  border-color: brown;
+  background-color: bisque;
+  color: brown;
+  text-align: center;
+}
+
+/*  To be used for CSS Validator icon
+.valid {
+  background: none;
+  color: gold; 
+  padding-right: none;
+  display: flex;
+}
+*/
+
+/******************
+    RESIZING
+******************/
+
+@media (max-width: 800px) {
+	a {
+	  width: 100%;
+    font-size: 50%; 
+  }
+}
+
+@media (max-width: 525px) {
+	a {
+	  width: 100%;
+    font-size: 25%; 
+  }
+}
+
+@media (max-width: 525px) {
+   img {
+     padding: 0;
+     width: 100%;
+  }
+}
+
+@media (max-width: 525px) {
+   .caption1, .caption2, .caption3 {
+     background-color: burlywood;
+  }
+    a.caption1, a.caption2, a.caption3 {
+    color: brown;
+  }
+}
+
+
+
+/******************
+    WEB FONTS 
+******************/
+@font-face {
+  font-family: 'Abolition Regular';
+  /*  CSS snippet for importing web font formats  */
+
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
